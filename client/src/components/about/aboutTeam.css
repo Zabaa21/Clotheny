@@ -1,0 +1,35 @@
+.transition
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgShow
+{
+    border-radius: 20px 200px 200px 200px;
+    -moz-border-radius: 20px 200px 200px 200px;
+    -webkit-border-radius: 20px 200px 200px 200px;
+    transition: linear all 0.5s;
+    
+}
+img.momentImg
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 20px 200px 200px 200px;
+    -moz-border-radius: 20px 200px 200px 200px;
+    -webkit-border-radius: 20px 200px 200px 200px;
+    opacity: 0;
+    transition: linear all 0.5s;
+}
+.transition:hover img.imgShow
+{
+    opacity: 0;
+}
+.transition:hover img.momentImg
+{
+    opacity: 1;
+}
+
